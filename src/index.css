@@ -1,0 +1,14 @@
+/* 1. imports first */
+@import "tailwindcss";
+/* 2. then theme tokens */
+@theme {
+  --color-primary: #E58411;
+  --color-secondary: #1E1E1E;
+  --color-secondary-bg: #F7F7F7;
+  --font-primary: "Poppins", sans-serif;
+}
+
+/* 3. then normal CSS */
+body {
+  font-family: var(--font-primary);
+}
