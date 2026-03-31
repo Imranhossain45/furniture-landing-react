@@ -1,6 +1,7 @@
 import React from "react";
 import bannerImg from "../../assets/banner.png";
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaInfo } from "react-icons/fa";
+import TooltipButton from "../../components/TooltipButton";
 const Hero = () => {
   return (
     <section
@@ -28,6 +29,11 @@ const Hero = () => {
       </div>
       {/* bottom blur effect */}
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-white/10 to-transparent">
+      </div>
+      {/* hover button for displaying tooltip */}
+      
+      <div className="hidden md:block absolute bottom-40 left-24 group">
+      <TooltipButton position="bottom-10 left-0" />
       </div>
     </section>
   );
